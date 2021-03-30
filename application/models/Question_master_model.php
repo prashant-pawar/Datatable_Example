@@ -40,9 +40,12 @@ class Question_master_model extends CI_Model {
 		$this->db->select($this->select_column);
 		$this->db->from($this->table);
 		if (isset($_POST["search"]["value"])) {
-			
+		
 			$this->db->like("question",$_POST["search"]["value"]);
-			$this->db->or_like("question_id",$_POST["search"]["value"]);
+			$this->db->or_like("opt_1",$_POST["search"]["value"]);
+			$this->db->or_like("opt_2",$_POST["search"]["value"]);
+			$this->db->or_like("opt_3",$_POST["search"]["value"]);
+			$this->db->or_like("opt_4",$_POST["search"]["value"]);
 		}
 		if (isset($_POST["order"])) {
 			$this->db->order_by($this->order_column[$_POST['order']['0']['column']],$_POST['order']['0']['dir']);

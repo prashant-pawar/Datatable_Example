@@ -18,7 +18,6 @@
 <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.24/datatables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
 
-
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script type="text/javascript">
@@ -192,7 +191,7 @@
 	 			url:"question_master/fetch_user",
 	 			type:"POST",
 	 			dataType:"json",
-	 				
+
 	 		"columnDefs":[
 	 		{
 	 			"targets":[0,3,4],
